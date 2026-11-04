@@ -1,4 +1,4 @@
-# Genomics Analysis Handbook
+# vcf-to-pgs
 
 A growing, **beginner-friendly and practical** resource for learning genomic data analysis—from sequencing reads and variant calls to statistical genetics, reproducible workflows, and interpretation.
 
