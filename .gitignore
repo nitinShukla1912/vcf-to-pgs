@@ -1,0 +1,18 @@
+__pycache__/
+.venv/
+*.log
+results/
+*.pgen
+*.pvar
+*.psam
+*.sscore
+*.eigenvec
+*.eigenval
+*.glm.linear
+*.prune.in
+*.prune.out
+# Never commit actual human genomes, individual-level phenotypes, consent records, or identifiers.
+*.bam
+*.cram
+*.fastq.gz
+*.g.vcf.gz
