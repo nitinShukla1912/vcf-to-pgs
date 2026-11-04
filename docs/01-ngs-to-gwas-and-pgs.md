@@ -122,6 +122,9 @@ A polygenic score is a weighted sum:
 PGS_i = \sum_{j=1}^{M} w_j G_{ij}
 \]
 
+<img width="167" height="81" alt="image" src="https://github.com/user-attachments/assets/73e4726c-4012-4276-aea1-b55fb5df0fa2" />
+
+
 `G` = effect-allele count for the person, `w` = the published or trained weight for the variant. **PGS weights may differ from raw GWAS betas**, because score-building methods adjust them for LD and statistical noise.
 
 ### Idea E — A significant association is not necessarily predictive or causal
@@ -297,6 +300,8 @@ A simple linear regression fits:
 \text{VO₂max}_i = \alpha + \beta_{\mathrm{rs101}}G_i + \varepsilon_i
 \]
 
+<img width="270" height="52" alt="image" src="https://github.com/user-attachments/assets/c887bf66-8fe7-44e7-8912-1031e499a1ea" />
+
 - `Gᵢ`: effect/tested allele count (0/1/2) in person `i`.
 - `α`: expected value when `G = 0` under the model.
 - `β`: fitted *slope*: average trait difference per additional G allele.
@@ -313,6 +318,9 @@ For a single SNP without covariates, it can be calculated as:
 \frac{\sum_i (G_i-\bar G)(Y_i-\bar Y)}
      {\sum_i (G_i-\bar G)^2}
 \]
+
+<img width="248" height="82" alt="image" src="https://github.com/user-attachments/assets/eed2407e-126f-41c3-b36e-d247ffd97f0e" />
+
 
 `Y` is the measured trait. The numerator captures whether G and Y vary together; the denominator captures how much G varies across people.
 
@@ -364,6 +372,9 @@ With selected covariates:
 Y = \alpha + \beta_G G + \beta_A Age + \beta_S Sex +
     \beta_{PC1} PC1 + \beta_{PC2} PC2 + \varepsilon
 \]
+
+<img width="623" height="185" alt="image" src="https://github.com/user-attachments/assets/07215a10-6821-4b86-a0cc-36953a95f5fa" />
+
 
 Now the reported `β_G` is the SNP association **conditional on the variables in the model**. PLINK estimates the covariate coefficients too, but the SNP beta is usually the primary GWAS result.
 
@@ -516,6 +527,9 @@ For an individual with one G at SNP1, two T at SNP2 and one C at SNP3:
 \[
 PGS = (1\times 2.0) + (2\times 1.5) + (1\times -1.0) = 4.0
 \]
+
+<img width="420" height="48" alt="image" src="https://github.com/user-attachments/assets/4245906a-faec-4685-bb70-3eb51ec36ab3" />
+
 
 This score is **not VO₂max = 4**, **not 4% athletic ability**, and **not a probability of a disease**. It is a weighted sum requiring statistical validation and calibration before meaningful interpretation.
 
