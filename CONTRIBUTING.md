@@ -13,4 +13,4 @@ For a new tutorial:
 
 Do not contribute identifiable human genomic or health data, credentials, access tokens or restricted datasets.
 
-Until a license is selected by the repository owner, do not assume rights to copy, redistribute or commercially reuse the contents beyond those otherwise granted by law.
+Until a license is selected, do not assume rights to copy, redistribute or commercially reuse the contents beyond those otherwise granted by law.
